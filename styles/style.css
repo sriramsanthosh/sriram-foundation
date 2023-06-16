@@ -1,0 +1,356 @@
+
+
+body{
+    overflow-x: hidden;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section:nth-child(2n+1){
+    background-color: #F2F2F2;
+}
+
+section{
+    width: 100%;
+}
+
+.section-heading{
+    font-size: xx-large;
+    padding-top: 100px;
+    font-family: 'Audiowide', cursive;
+    color: rgb(94, 33, 33);
+    margin-top: 0;
+}
+
+.text-center{
+    text-align: center;
+}
+/*================================ Header Section ================================== */
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-flex;
+    float: right;
+    font-weight: bolder;
+    font-family: 'Audiowide', cursive;
+}
+
+
+
+.nav-hor-bars label{
+    visibility: hidden;
+
+}
+.nav-hor-bars input{
+    visibility: hidden;
+}
+
+.nav-hor-bars{
+    float: right;
+    visibility: hidden;
+}
+
+.logo-container{
+    float: left;
+}
+
+
+
+.logo-img{
+    width: 350px;
+}
+
+.nav-bar{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    margin-top: -80px;
+    z-index: 2;
+    box-shadow: 1px 1px 1px 1px grey;
+}
+
+.nav-link-box{
+    border-radius: 50px;
+    margin: 20px;
+    padding: 5px;
+    height: fit-content;
+    transition: 0.4s;
+}
+
+.nav-link-box:hover{
+    background-color: rgb(94, 33, 33);
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: x-large;
+    margin: 0;
+    color: rgb(94, 33, 33);
+    font-weight: 800;
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+.donate-bg{
+    background: url(/images/donate.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 80px;
+}
+
+.paynow img{
+    position: relative;
+    width: 45px;
+    top: 5px;
+}
+
+.paynow{
+    color: white;
+    font-weight: bolder;
+    font-size: 40px;
+    border-radius: 50px;
+    box-shadow: 10px 20px 30px blue;
+    cursor: pointer;
+    background-color: rgb(94, 33, 33);
+    font-family: 'Audiowide', cursive;
+    width: fit-content;
+}
+
+.paynow span{
+    font-size: 40px;
+}
+
+.paynow:hover{
+    background-color: white;
+    color: rgb(94, 33, 33);
+    transition: 0.5s;
+}
+
+.paynow-container{
+    position: relative;
+    top: 69vh;
+}
+
+/* =========================== About Section ======================== */
+
+.about-container{
+    font-family: 'Almendra', serif;
+    padding-bottom: 20px;
+    font-size: x-large;
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+}
+
+/* =========================== Donate Section ======================= */
+
+
+
+/* .donate-text{
+    text-align: justify;
+} */
+
+.donate-container{
+    /* margin: 15px; */
+    font-family: 'Almendra', serif;
+    padding-bottom: 20px;
+    font-size: x-large;
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+}
+
+
+
+.heart-container img{
+    /* border-radius: 50%; */
+    width: 300px;
+    /* float: left; */
+}
+
+
+
+/* =========================== Contact Section ======================= */
+
+
+
+.input-box{
+    border-radius: 4px;
+    font-size: 20px;
+    border: 2px solid grey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* font-family: 'Roboto Slab', serif; */
+    font-family: 'Almendra', serif;
+}
+
+.input-box:focus{
+    outline: none;
+    border: 2px solid green;
+}
+
+.input-container{
+    margin-left: 50px;
+    /* font-family: 'Quantico', sans-serif; */
+    font-family: 'Almendra', serif;
+    padding-bottom: 40px;
+    font-size: x-large;
+    /* margin: auto; */
+}
+
+.button-container{
+    position: relative;
+    text-align: center;
+}
+
+
+/* ========================== Footer Container ======================== */
+
+.footer-container{
+    padding: 20px;
+    background-color: rgb(68,68,68);
+    font-family: 'Almendra', serif;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.footer-container div{
+    padding: 10px;
+}
+
+.social{
+    color: whitesmoke;
+    transition: .8s;
+    margin: 10px;
+}
+
+.author{
+    color: lightgreen;
+}
+
+.author:hover{
+    color: hotpink;
+}
+
+.footer-link{
+    padding: 10px;
+    font-size: 25px;
+}
+
+.social:hover{
+    box-shadow: 2px 2px 2px 10px ;
+    background-color: white;
+    color: rgb(68, 68, 68);
+}
+
+
+
+/* =========================== Media Screens ========================= */
+
+@media screen and (max-width:977px){
+
+    .nav-list{
+        position: relative;
+        display: block;
+        margin-top: 80px;
+        transition: 0.4s;
+        float: none;
+        background-color: whitesmoke;
+        width: 50%;
+        height: 100vh;
+        text-align: center;
+        z-index: -1;
+    }
+    
+    
+
+    .nav-hor-bars{
+        visibility: visible;
+        margin-top: 20px;
+        margin-right: 4px;
+    }
+    
+    
+    .nav-hor-bars label{
+        visibility: visible;
+        padding: 5px;
+        
+    }
+    
+    .nav-bars{
+        color : rgb(94, 33, 33);
+        border: 3px solid whitesmoke;
+        font-size: xx-large;
+    }
+    
+    .nav-bars:hover{
+        color: rgb(94, 33, 33);
+        border: 3px solid rgb(94, 33, 33);
+        border-radius: 6px;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+
+    .nav-link-box:hover{
+        background-color: whitesmoke;
+    }
+
+    .nav-link:hover{
+        color: black;
+    }
+}
+
+@media screen and (max-width:422px){
+    .logo-img{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:374px){
+    .logo-img{
+        width: 280px;
+    }
+}
+
+
+
+/* ================= Images Grid ==================== */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 32%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    transition: transform .2s;
+  }
+
+  .column img:hover{
+    transform: scale(1.025);
+    cursor: pointer;
+  }
