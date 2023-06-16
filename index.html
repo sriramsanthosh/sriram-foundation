@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sriram Foundation</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almendra&family=Audiowide&family=Quantico&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <!-- /google fonts -->
+
+    <!-- google icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- /google icons -->
+
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/0d3ce04075.js" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="images/logo img-modified.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header id="#">
+        <div class="nav-bar">
+            <div class="nav-hor-bars">
+                <input class="bars-check" type="checkbox" id="check-box">
+                <label for="check-box" class="nav-link nav-bars"><i class="fa-solid fa-bars"></i></label>
+            </div>
+            <div class="logo-container"><a href="#" class="logo"><img src="images/logo-removebg-preview.png" alt="logo" class="logo-img"></a></div>
+            <ul class="nav-list">
+                <li class="nav-link-box"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-link-box"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-link-box"><a href="#donate" class="nav-link">Donate</a></li>
+                <li class="nav-link-box"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+        <div class="donate-bg">
+            <div class="paynow-container text-center">
+                <!-- <img src="images/razorpay logo-modified.png" alt="razorpay-logo"> -->
+                <a href="#donate"><button class="paynow"><span class="material-symbols-outlined">volunteer_activism</span> Donate</button></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h1 class="text-center section-heading"><i class="fa-solid fa-circle-info"></i> About Us</h1>
+            <div class="about-container">
+                    <h2>Investing in a better tomorrow... </h2>
+                    <p>We firmly believe that by investing in their education, providing scholarships, and meeting their basic needs, we can empower them to break free from the cycle of poverty and create a better life for themselves and their communities.
+                    Education lies at the core of our mission. We understand that education is not just a basic right but also a powerful tool for personal and societal transformation. We strive to provide quality education to children who would otherwise lack access to it. By equipping them with knowledge and skills, we open doors of opportunity and enable them to build a brighter future.In addition to education, we recognize the immediate needs of these children. Many of them face hunger, inadequate healthcare, and challenging living conditions.</p>
+                    <!-- Photo Grid -->
+                    <div class="row"> 
+                        <div class="column">
+                            <img src="images/img4.jpg" style="width:100%">
+                            <img src="images/img4.jpeg" style="width:100%">
+                        </div>
+
+                        <div class="column">
+                            <img src="images/img2.avif" style="width:100%">
+                            <img src="images/img5.jpg" style="width:100%">
+                        </div> 
+                        
+                        <div class="column">
+                            <img src="images/img6.webp" style="width:100%">
+                            <img src="images/img6.jpg" style="width:100%">
+                        </div>
+                    </div>
+                    <p>Therefore, we extend its support by providing nutritious meals, healthcare facilities, and shelter to ensure their overall well-being. We believe that a child's physical and emotional needs must be met for them to thrive academically and in life.
+                        One of our key focuses is on scholarships. We firmly believe that financial constraints should not hinder a child's ability to pursue higher education. Through our scholarship programs, we aim to empower talented and deserving students to fulfill their dreams. By offering financial assistance, we remove barriers and enable them to access quality higher education, setting them on a path towards success.
+                        We understands that children are the future of our society, and their well-being is crucial for the progress of our communities and nations. Our commitment extends beyond providing immediate relief; we aim to instill a sense of hope, resilience, and self-confidence in these children. We strive to create an environment where they can dream big, believe in themselves, and realize their full potential.</p>
+                    </div>
+        </section>
+
+        <section id="donate">
+            <h1 class="text-center section-heading"><i class="fa-solid fa-heart"></i> Donate Us</h1>
+            <div class="donate-container">
+                    <p class="donate-text">None of our achievements would have been possible without the generous support of individuals, organizations, and partners who share our vision. Their donations and contributions have helped us reach out to more children and make a greater impact in their lives.</p>
+                    <div class="heart-container text-center">
+                        <img src="images/img7.jpg" alt="">
+                    </div>
+                    <div class="donate-text">We are dedicated to serving the needs of underprivileged children, focusing on education, scholarships, and meeting their basic necessities. We firmly believe that by investing in their future, we are investing in a better tomorrow for all of us. Together, let us continue to make a difference in the lives of these deserving children.</div>
+                
+
+                <div class="col">
+                    <p><form class="text-center"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_M2U5EFSffso0sW" async> </script> </form></p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h1 class="text-center section-heading"><i class="fa-regular fa-address-card"></i> Contact</h1>    
+            <div class="input-container">
+                <p>We'd love to hear from you</p>
+                <p>Comments, suggestions and questions are always welcome...</p>
+                <form action="/" method="post">
+                    <input class="input-box" type="text" name="name" id="name" placeholder="Name *" required><br>
+                    <input class="input-box" type="email" name="email-id" id="email" placeholder="Email Address *" required><br>
+                    <input class="input-box" type="tel" name="phone" id="phone" placeholder="Phone Number (Optional)"><br>
+                    <textarea class="input-box" name="message" id="message" cols="30" rows="10" placeholder="Your Message Here *" required></textarea><br>
+                    <div class="button-container">
+                        <button class="text-center" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+
+    </main>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="text-center">
+                <span class="footer-link">&copy;</span>Sriram Foundation @ 2023
+            </div>
+            <div class="text-center follow-us">
+                : : Follow us : : 
+                <div>
+                    <a class="footer-link social" href="https://www.linkedin.com/in/sriramsanthosh/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a> <a class="footer-link social" target="_blank" href="https://www.facebook.com/sriramsanthosh44/"></i> <i class="fa-brands fa-facebook-f"></i></a> <a class="footer-link social" target="_blank" href="https://twitter.com/sriramsanthosh_"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                    
+            </div>
+            <div class="text-center made-with">
+                Made with <span class="footer-link">💚</span> by 
+                <div>
+                    <a class="footer-link author" href="https://www.linkedin.com/in/sriramsanthosh/" target="_blank">Sriram Santhosh Itha</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
