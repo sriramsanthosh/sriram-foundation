@@ -102,7 +102,7 @@ ul{
 }
 
 .donate-bg{
-    background: url(/images/donate.jpg);
+    background: url('images/donate.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
