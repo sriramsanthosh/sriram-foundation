@@ -82,7 +82,7 @@ ul{
     margin: 20px;
     padding: 5px;
     height: fit-content;
-    transition: 0.4s;
+    /* transition: 0.4s; */
 }
 
 .nav-link-box:hover{
@@ -107,42 +107,16 @@ ul{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    width: 100vw;
+    scroll-behavior: smooth;
+    width: 100%;
     height: 100vh;
     margin-top: 80px;
+    margin-bottom: -80px;
 }
 
-.paynow img{
+.razorpay{
     position: relative;
-    width: 45px;
-    top: 5px;
-}
-
-.paynow{
-    color: white;
-    font-weight: bolder;
-    font-size: 40px;
-    border-radius: 50px;
-    box-shadow: 10px 20px 30px blue;
-    cursor: pointer;
-    background-color: rgb(94, 33, 33);
-    font-family: 'Audiowide', cursive;
-    width: fit-content;
-}
-
-.paynow span{
-    font-size: 40px;
-}
-
-.paynow:hover{
-    background-color: white;
-    color: rgb(94, 33, 33);
-    transition: 0.5s;
-}
-
-.paynow-container{
-    position: relative;
-    top: 69vh;
+    top: 50vh;
 }
 
 /* =========================== About Section ======================== */
@@ -159,13 +133,7 @@ ul{
 /* =========================== Donate Section ======================= */
 
 
-
-/* .donate-text{
-    text-align: justify;
-} */
-
-.donate-container{
-    /* margin: 15px; */
+ .donate-container{
     font-family: 'Almendra', serif;
     padding-bottom: 20px;
     font-size: x-large;
@@ -177,11 +145,27 @@ ul{
 
 
 .heart-container img{
-    /* border-radius: 50%; */
     width: 300px;
-    /* float: left; */
 }
 
+
+/* .heart-container img{
+    width: 300px;
+} */
+
+/* .heart-container{
+    background-image: url(/images/img7.jpg);
+    width: 350px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+}
+
+.razorpay{
+    position: relative;
+    top: 40%;
+} */
 
 
 /* =========================== Contact Section ======================= */
@@ -196,7 +180,10 @@ ul{
     margin-bottom: 10px;
     /* font-family: 'Roboto Slab', serif; */
     font-family: 'Almendra', serif;
+    width: 80%;
 }
+
+
 
 .input-box:focus{
     outline: none;
@@ -204,17 +191,36 @@ ul{
 }
 
 .input-container{
-    margin-left: 50px;
+    /* margin-left: 50px; */
     /* font-family: 'Quantico', sans-serif; */
     font-family: 'Almendra', serif;
     padding-bottom: 40px;
     font-size: x-large;
     /* margin: auto; */
+    /* width: 80%; */
+    text-align: center;
+    /* margin: auto; */
+    /* background-color: red; */
 }
 
-.button-container{
-    position: relative;
-    text-align: center;
+
+
+.paynow{
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 50px;
+    /* box-shadow: 10px 20px 30px blue; */
+    cursor: pointer;
+    background-color: green;
+    width: fit-content;
+    font-family: 'Almendra', serif;
+}
+
+.paynow:hover{
+    background-color: white;
+    color: green;
+    transition: 0.5s;
 }
 
 
@@ -260,6 +266,7 @@ ul{
 
 
 
+
 /* =========================== Media Screens ========================= */
 
 @media screen and (max-width:977px){
@@ -268,11 +275,11 @@ ul{
         position: relative;
         display: block;
         margin-top: 80px;
-        transition: 0.4s;
+        /* transition: 0.4s; */
         float: none;
         background-color: whitesmoke;
-        width: 50%;
-        height: 100vh;
+        width: 100%;
+        /* height: 100vh; */
         text-align: center;
         z-index: -1;
     }
@@ -313,17 +320,57 @@ ul{
     .nav-link:hover{
         color: black;
     }
+
+    .section-heading{
+        padding-top: 75px;
+    }
+}
+@media screen and (max-width:441px){
+    .heart-container img{
+        width: 250px;
+    }
 }
 
-@media screen and (max-width:422px){
+@media screen and (max-width:430px){
     .logo-img{
         width: 300px;
+    }
+
+    .donate-bg{
+        margin-top: 65px;
+    }
+
+    .nav-bar{
+        height: 65px;
+        margin-top: -65px;
+    }
+
+    .nav-hor-bars{
+        margin-top: 15px;
+    }
+    .nav-list{
+        margin-top: 65px;
+    }
+
+    .about-container, .donate-container{
+        width: 90%;
     }
 }
 
 @media screen and (max-width:374px){
     .logo-img{
         width: 280px;
+    }
+}
+
+@media screen and (max-width:351px){
+    .logo-img{
+        width: 260px;
+    }
+}
+@media screen and (max-width:331px){
+    .logo-img{
+        width: 240px;
     }
 }
 

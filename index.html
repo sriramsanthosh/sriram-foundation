@@ -38,7 +38,10 @@
         <div class="donate-bg">
             <div class="paynow-container text-center">
                 <!-- <img src="images/razorpay logo-modified.png" alt="razorpay-logo"> -->
-                <a href="#donate"><button class="paynow"><span class="material-symbols-outlined">volunteer_activism</span> Donate</button></a>
+                <!-- <a href="#donate"><button class="paynow"><i class="fa-solid fa-hand-holding-heart"></i></button></a> -->
+                <!-- <span class="material-symbols-outlined">volunteer_activism</span>  -->
+                
+                <p><form class="text-center razorpay "><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_M2U5EFSffso0sW" async> </script> </form></p>
             </div>
         </div>
     </header>
@@ -92,15 +95,15 @@
         <section id="contact">
             <h1 class="text-center section-heading"><i class="fa-regular fa-address-card"></i> Contact</h1>    
             <div class="input-container">
-                <p>We'd love to hear from you</p>
-                <p>Comments, suggestions and questions are always welcome...</p>
-                <form action="/" method="post">
+                <div>We'd love to hear from you!</div>
+                <div>Comments, suggestions and questions are always welcome...</div>
+                <form action="/" method="post" class="input-form">
                     <input class="input-box" type="text" name="name" id="name" placeholder="Name *" required><br>
                     <input class="input-box" type="email" name="email-id" id="email" placeholder="Email Address *" required><br>
                     <input class="input-box" type="tel" name="phone" id="phone" placeholder="Phone Number (Optional)"><br>
-                    <textarea class="input-box" name="message" id="message" cols="30" rows="10" placeholder="Your Message Here *" required></textarea><br>
+                    <textarea class="input-box" name="message" id="message" cols="20" rows="3" placeholder="Your Message Here *" required></textarea><br>
                     <div class="button-container">
-                        <button class="text-center" type="submit">Submit</button>
+                        <button class="text-center paynow" type="submit">Send &nbsp; Message</button>
                     </div>
                 </form>
             </div>
