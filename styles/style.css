@@ -1,5 +1,3 @@
-
-
 body{
     overflow-x: hidden;
     user-select: none;
@@ -30,6 +28,7 @@ section{
 .text-center{
     text-align: center;
 }
+
 /*================================ Header Section ================================== */
 
 ul{
@@ -41,8 +40,6 @@ ul{
     font-weight: bolder;
     font-family: 'Audiowide', cursive;
 }
-
-
 
 .nav-hor-bars label{
     visibility: hidden;
@@ -60,8 +57,6 @@ ul{
 .logo-container{
     float: left;
 }
-
-
 
 .logo-img{
     width: 350px;
@@ -130,10 +125,36 @@ ul{
     text-align: justify;
 }
 
+/* === Images Grid === */
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+  
+/* Creating four equal columns that sits next to each other */
+
+.column{
+    flex: 25%;
+    max-width: 32%;
+    padding: 0 4px;
+  }
+  
+.column img{
+    margin-top: 8px;
+    vertical-align: middle;
+    transition: transform .2s;
+}
+
+.column img:hover{
+    transform: scale(1.025);
+    cursor: pointer;
+}
+
 /* =========================== Donate Section ======================= */
 
-
- .donate-container{
+.donate-container{
     font-family: 'Almendra', serif;
     padding-bottom: 20px;
     font-size: x-large;
@@ -142,35 +163,11 @@ ul{
     text-align: justify;
 }
 
-
-
 .heart-container img{
     width: 300px;
 }
 
-
-/* .heart-container img{
-    width: 300px;
-} */
-
-/* .heart-container{
-    background-image: url(/images/img7.jpg);
-    width: 350px;
-    height: 200px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: auto;
-}
-
-.razorpay{
-    position: relative;
-    top: 40%;
-} */
-
-
 /* =========================== Contact Section ======================= */
-
-
 
 .input-box{
     border-radius: 4px;
@@ -183,34 +180,23 @@ ul{
     width: 80%;
 }
 
-
-
 .input-box:focus{
     outline: none;
     border: 2px solid green;
 }
 
 .input-container{
-    /* margin-left: 50px; */
-    /* font-family: 'Quantico', sans-serif; */
     font-family: 'Almendra', serif;
     padding-bottom: 40px;
     font-size: x-large;
-    /* margin: auto; */
-    /* width: 80%; */
     text-align: center;
-    /* margin: auto; */
-    /* background-color: red; */
 }
-
-
 
 .paynow{
     color: white;
     font-weight: bolder;
     font-size: 20px;
     border-radius: 50px;
-    /* box-shadow: 10px 20px 30px blue; */
     cursor: pointer;
     background-color: green;
     width: fit-content;
@@ -222,7 +208,6 @@ ul{
     color: green;
     transition: 0.5s;
 }
-
 
 /* ========================== Footer Container ======================== */
 
@@ -264,9 +249,6 @@ ul{
     color: rgb(68, 68, 68);
 }
 
-
-
-
 /* =========================== Media Screens ========================= */
 
 @media screen and (max-width:977px){
@@ -284,14 +266,11 @@ ul{
         z-index: -1;
     }
     
-    
-
     .nav-hor-bars{
         visibility: visible;
         margin-top: 20px;
         margin-right: 4px;
     }
-    
     
     .nav-hor-bars label{
         visibility: visible;
@@ -313,18 +292,20 @@ ul{
         cursor: pointer;
     }
 
+    .nav-link-box{
+        padding: 10px;
+    }
+
     .nav-link-box:hover{
-        background-color: whitesmoke;
+        background-color: transparent;
     }
 
     .nav-link:hover{
         color: black;
     }
 
-    .section-heading{
-        padding-top: 75px;
-    }
 }
+
 @media screen and (max-width:441px){
     .heart-container img{
         width: 250px;
@@ -355,6 +336,11 @@ ul{
     .about-container, .donate-container{
         width: 90%;
     }
+
+    .section-heading{
+        padding-top: 80px;
+    }
+
 }
 
 @media screen and (max-width:374px){
@@ -373,31 +359,8 @@ ul{
         width: 240px;
     }
 }
-
-
-
-/* ================= Images Grid ==================== */
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-  
-  /* Create four equal columns that sits next to each other */
-  .column {
-    flex: 25%;
-    max-width: 32%;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    transition: transform .2s;
-  }
-
-  .column img:hover{
-    transform: scale(1.025);
-    cursor: pointer;
-  }
+@media screen and (max-width:311px){
+    .logo-img{
+        width: 220px;
+    }
+}
