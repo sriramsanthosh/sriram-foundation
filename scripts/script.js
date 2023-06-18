@@ -50,7 +50,6 @@ var contactFormDB = firebase.database().ref("contactForm");
 
 document.querySelector('.input-form').addEventListener('submit', submitForm);
 
-
 function submitForm(e){
     e.preventDefault();
     var firstName = document.querySelector('#Fname').value;
