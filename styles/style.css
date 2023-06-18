@@ -77,10 +77,11 @@ ul{
     margin: 20px;
     padding: 5px;
     height: fit-content;
-    /* transition: 0.4s; */
+    /* transition: 0.8s; */
 }
 
 .nav-link-box:hover{
+    transition: 0.8s;
     background-color: rgb(94, 33, 33);
 }
 
