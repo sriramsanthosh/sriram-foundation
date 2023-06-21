@@ -4,6 +4,8 @@ var temp4 = document.querySelectorAll('.nav-link');
 var temp5 = document.querySelector('main');
 var temp6 = document.querySelector('.donate-bg');
 var temp7 = document.querySelector('footer');
+var temp8 = document.querySelector('.logo-container');
+
 temp3.style.top = '-100vh';
 
 function toggleNavbar(){
@@ -17,6 +19,8 @@ function toggleNavbar(){
 temp5.addEventListener('click', toggleNavbar);
 temp6.addEventListener('click', toggleNavbar);
 temp7.addEventListener('click', toggleNavbar);
+temp8.addEventListener('click', toggleNavbar);
+
 
 for(let k = 0; k<temp4.length; k++){
     temp4[k].addEventListener('click', function(){
