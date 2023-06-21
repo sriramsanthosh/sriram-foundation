@@ -30,6 +30,11 @@ for(let k = 0; k<temp4.length; k++){
     });
 }
 
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-CHLZ29Q7QG');
+
 // Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyAj71I1MUrbJpbuiEV9OHqLhrN9i4uYPqc",
