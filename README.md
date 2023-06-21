@@ -6,10 +6,6 @@
 
 ## Website Link : https://sriramsanthosh.github.io/sriram-foundation/ 
 
-## Sample Video of WEBISTE  📽️:
-
-
-
 ### 🧑‍💻 Technologies used : HTML, CSS, JavaScript, API.
 ### 💡 Database : Firebase console (Real Time Database).
 ### 🎯 Payment Gateway Integrated with **Razorpay** payment platform.
