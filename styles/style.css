@@ -138,12 +138,20 @@ ul{
     font-size: medium;
 }
 
+.read-more-link:hover{
+    color: green;
+}
+
 .readless-link{
     display: none;
     color: crimson;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
+}
+
+.readless-link:hover{
+    color: green;
 }
 
 /* === Images Grid === */
