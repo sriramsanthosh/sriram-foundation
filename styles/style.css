@@ -126,8 +126,24 @@ ul{
     text-align: justify;
 }
 
-.read-more-link{
+.read-more-text{
     display: none;
+}
+
+.read-more-link{
+    display: inline;
+    color: crimson;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+.readless-link{
+    display: none;
+    color: crimson;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
 }
 
 /* === Images Grid === */
@@ -315,24 +331,7 @@ ul{
     .heart-container img{
         width: 250px;
     }
-    .read-more-text{
-        display: none;
-    }
-    .read-more-link{
-        display: inline;
-        color: crimson;
-        font-weight: bold;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: medium;
-    }
-
-    .readless-link{
-        display: none;
-        color: crimson;
-        font-weight: bold;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: medium;
-    }
+    
 }
 
 @media screen and (max-width:430px){
