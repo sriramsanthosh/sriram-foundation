@@ -30,6 +30,40 @@ for(let k = 0; k<temp4.length; k++){
     });
 }
 
+var readMoreUrl = document.querySelector('.readLink1');
+var readMoreText = document.querySelector('#readmore1');
+var readLess1 = document.querySelector('.readless1');
+
+var readMoreUrl2 = document.querySelector('.readLink2');
+var readMoreText2 = document.querySelector('#readmore2');
+var readLess2 = document.querySelector('.readless2');
+
+readMoreUrl.addEventListener('click', function(){
+    readMoreUrl.style.display = 'none';
+    readMoreText.style.display = 'inline';
+    readLess1.style.display = 'inline';
+});
+
+readLess1.addEventListener('click', function(){
+    readMoreText.style.display = 'none';
+    readMoreUrl.style.display = 'inline'; 
+    readLess1.style.display = 'none';
+});
+
+readMoreUrl2.addEventListener('click', function(){
+    readMoreUrl2.style.display = 'none';
+    readMoreText2.style.display = 'inline';
+    readLess2.style.display = 'inline';
+
+})
+
+readLess2.addEventListener('click', function(){
+    readMoreText2.style.display = 'none';
+    readMoreUrl2.style.display = 'inline';
+    readLess2.style.display = 'none';
+});
+
+
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
