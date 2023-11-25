@@ -342,7 +342,7 @@ ul{
     
 }
 
-@media screen and (max-width:430px){
+@media screen and (max-width:436px){
     .logo-img{
         width: 300px;
     }
@@ -373,7 +373,7 @@ ul{
 
 }
 
-@media screen and (max-width:374px){
+@media screen and (max-width:388px){
     .logo-img{
         width: 280px;
     }
