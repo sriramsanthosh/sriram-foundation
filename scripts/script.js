@@ -103,7 +103,6 @@ function submitForm(e){
 
     let date = new Date().toJSON();
     saveContent(firstName, lastName, email, phone, msgcontent, date);
-    window.alert("Thank you!! We will get back to you soon!");
 }
 
 const saveContent = (firstName, lastName, email, phone, msgcontent, currentDate)=>{
@@ -116,4 +115,26 @@ const saveContent = (firstName, lastName, email, phone, msgcontent, currentDate)
         msgcontent : msgcontent,
         date : currentDate
     });
+
+    let ownerEmail = "sriramsanthosh321@gmail.com"
+    let ownerEmail2 = "sriramsanthosh80@gmail.com"
+    let msgbody2 = `<div>
+    <h2>Hey ${detailsofUser.name},</h2><h3> How do you do? Thanks for contacting Sriram Foundation. <br> </h3>
+    <div style = "margin:auto; padding: 0 30px; border: 2px solid lightgray; text-align: center; width:fit-content">
+        <h2>Your Message </h2>
+        <h2>"${detailsofUser.msgcontent}"</h2>
+    </div>
+    <h3>I will get into touch in short time <b>:)</b></h3>
+    <h3>Please subscribe to my youtube channel <a href="https://www.youtube.com/channel/UCqFxWlMFmpOCyjQQBmsi6-g" target="_blank" style="text-decoration:underline;">Study&nbsp;With&nbsp;Sriram</a> </h3>
+        </div>`;
+    Email.send({
+        SecureToken : "eae2712b-1d24-42ce-be46-e8e728dca769",
+        To : `${detailsofUser.email}, ${ownerEmail2}`,
+        From : `${ownerEmail}`,
+        Subject : "Thank you for Contacting me",
+        Body : msgbody2
+    })
+    .then(
+      message => alert("Thank you!! I will get back to you soon! Please check your inbox (as well as in spam box) for my message")
+    );
 }
