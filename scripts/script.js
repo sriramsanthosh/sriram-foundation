@@ -120,17 +120,17 @@ const saveContent = (firstName, lastName, email, phone, msgcontent, currentDate)
     let ownerEmail = "sriramsanthosh321@gmail.com"
     let ownerEmail2 = "sriramsanthosh80@gmail.com"
     let msgbody2 = `<div>
-    <h2>Hey ${detailsofUser.Fname},</h2><h3> How do you do? Thanks for contacting Sriram Foundation. <br> </h3>
+    <h2>Hey ${firstName},</h2><h3> How do you do? Thanks for contacting Sriram Foundation. <br> </h3>
     <div style = "margin:auto; padding: 0 30px; border: 2px solid lightgray; text-align: center; width:fit-content">
         <h2>Your Message </h2>
-        <h2>"${detailsofUser.msgcontent}"</h2>
+        <h2>"${msgcontent}"</h2>
     </div>
     <h3>I will get into touch in short time <b>:)</b></h3>
     <h3>Please subscribe to my youtube channel <a href="https://www.youtube.com/channel/UCqFxWlMFmpOCyjQQBmsi6-g" target="_blank" style="text-decoration:underline;">Study&nbsp;With&nbsp;Sriram</a> </h3>
         </div>`;
     Email.send({
         SecureToken : "eae2712b-1d24-42ce-be46-e8e728dca769",
-        To : `${detailsofUser.email}, ${ownerEmail2}`,
+        To : `${email}, ${ownerEmail2}`,
         From : `${ownerEmail}`,
         Subject : "Thank you for Contacting Sriram Foundation",
         Body : msgbody2
