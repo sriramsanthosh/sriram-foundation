@@ -105,17 +105,16 @@ function submitForm(e){
     saveContent(firstName, lastName, email, phone, msgcontent, date);
 }
 
-const saveContent = (firstName, lastName, email, phone, msgcontent, currentDate)=>{
+
+const saveContent = (name, email, msgcontent, currentDate)=>{
     var newContactForm = contactFormDB.push();
-    newContactForm.set({
-        FName : firstName,
-        LName : lastName,
+    let detailsofUser = {
+        name : name,
         email : email,
-        phone : phone,
         msgcontent : msgcontent,
         date : currentDate
-    });
-
+    }
+    newContactForm.set({detailsofUser});
     let ownerEmail = "sriramsanthosh321@gmail.com"
     let ownerEmail2 = "sriramsanthosh80@gmail.com"
     let msgbody2 = `<div>
@@ -138,3 +137,4 @@ const saveContent = (firstName, lastName, email, phone, msgcontent, currentDate)
       message => alert("Thank you!! I will get back to you soon! Please check your inbox (as well as in spam box) for my message")
     );
 }
+
