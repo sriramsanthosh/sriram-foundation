@@ -106,11 +106,13 @@ function submitForm(e){
 }
 
 
-const saveContent = (name, email, msgcontent, currentDate)=>{
+const saveContent = (firstName, lastName, email, phone, msgcontent, currentDate)=>{
     var newContactForm = contactFormDB.push();
     let detailsofUser = {
-        name : name,
+        FName : firstName,
+        LName : lastName,
         email : email,
+        phone : phone,
         msgcontent : msgcontent,
         date : currentDate
     }
@@ -118,7 +120,7 @@ const saveContent = (name, email, msgcontent, currentDate)=>{
     let ownerEmail = "sriramsanthosh321@gmail.com"
     let ownerEmail2 = "sriramsanthosh80@gmail.com"
     let msgbody2 = `<div>
-    <h2>Hey ${detailsofUser.name},</h2><h3> How do you do? Thanks for contacting Sriram Foundation. <br> </h3>
+    <h2>Hey ${detailsofUser.Fname},</h2><h3> How do you do? Thanks for contacting Sriram Foundation. <br> </h3>
     <div style = "margin:auto; padding: 0 30px; border: 2px solid lightgray; text-align: center; width:fit-content">
         <h2>Your Message </h2>
         <h2>"${detailsofUser.msgcontent}"</h2>
@@ -130,7 +132,7 @@ const saveContent = (name, email, msgcontent, currentDate)=>{
         SecureToken : "eae2712b-1d24-42ce-be46-e8e728dca769",
         To : `${detailsofUser.email}, ${ownerEmail2}`,
         From : `${ownerEmail}`,
-        Subject : "Thank you for Contacting me",
+        Subject : "Thank you for Contacting Sriram Foundation",
         Body : msgbody2
     })
     .then(
