@@ -5,6 +5,12 @@ var temp5 = document.querySelector('main');
 var temp6 = document.querySelector('.donate-bg');
 var temp7 = document.querySelector('footer');
 var temp8 = document.querySelector('.logo-container');
+var preloader = document.querySelector('.loader');
+
+window.addEventListener('load', function(){
+    preloader.style.display = 'none';
+});
+
 
 temp3.style.top = '-100vh';
 
@@ -120,7 +126,7 @@ const saveContent = (firstName, lastName, email, phone, msgcontent, currentDate)
     let ownerEmail = "sriramsanthosh321@gmail.com"
     let ownerEmail2 = "sriramsanthosh80@gmail.com"
     let msgbody2 = `<div>
-    <h2>Hey ${firstName},</h2><h3> How do you do? Thanks for contacting Sriram Foundation. <br> </h3>
+    <h2 style="font-style:">Hey ${firstName},</h2><h3> How do you do? Thanks for contacting Sriram Foundation. <br> </h3>
     <div style = "margin:auto; padding: 0 30px; border: 2px solid lightgray; text-align: center; width:fit-content">
         <h2>Your Message </h2>
         <h2>"${msgcontent}"</h2>

@@ -29,6 +29,18 @@ section{
     text-align: center;
 }
 
+.loader{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background: url(../images/preloader.gif);
+    background-color: #F2F2F2;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    z-index: 3;
+}
+
 /*================================ Header Section ================================== */
 
 ul{
